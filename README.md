@@ -1,5 +1,28 @@
 # Agentic_RAG
-Demo project for agentic rag.
+
+<br>
+
+## Problem Statement
+
+`Design and implement a system that answers user question related to Indian Tax and GST regulations using official documents, and automatically falls back to web search when the required information is not available in documents. `
+
+## Flowchart
+
+![FLowchart](./research/Flowchart.drawio.png)
+
+## Techstack
+
+`Python - Programming Language`  
+`Fastapi - Development`  
+`Langchain - LLMs and components integration`  
+`Langgraph - Workflow/Graph Building`  
+`Openai - LLM Model`  
+`ChromaDB - Vectorstore`  
+`Tavily - Web Search`  
+
+<br><br>
+
+## How To Build : 
 
 #### Step 1 : Github Repository Creation 
 
@@ -15,6 +38,7 @@ Demo project for agentic rag.
 ```bash 
 uv --version
 uv venv .venv
+.venv\scripts\activate   |  source .venv/bin/activate
 uv pip install -r requirements.txt
 uv pip list  
 
@@ -34,12 +58,12 @@ uv run python -m src.components.data_ingestion
 #### Step 8 : Import fastapi in main file and create health route for check api's working and packages installed properly. 
 
 ```bash 
-uvicorn src.main:app --reload
+uv run python -m uvicorn src.main:app --reload
 ```
 
 #### Step 9 : push basic folder structure to github
 
-#### Step 10 : Create notebook folder and start creatinng components. 
+#### Step 10 : Create notebook/research folder and start research and creating components. 
 
 - Create Required functions 
 1. Read pdf files. 
